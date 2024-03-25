@@ -1,0 +1,117 @@
+.contact {
+    padding: 150px 20px 50px 20px;
+    background: var(--background);
+    color: var(--color);
+
+    &__title {
+        padding-bottom: 60px;
+        font-size: 80px;
+        text-align: center;
+        font-weight: 500;
+        @media (max-width:600px ){
+            font-size: 50px;
+        }
+        @media (max-width:400px ){
+            font-size: 30px;
+        }
+    }
+
+
+    &__p {
+        font-size: 30px;
+        margin-top: 40px;
+        @media (max-width:600px ){
+            font-size: 20px;
+        }
+    }
+}
+
+
+.media {
+    background: rgba(123, 121, 121, 0.6);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    @media (max-width:500px ){
+        padding: 10px;
+    }
+
+    &__box {
+        display: flex;
+        padding: 10px;
+        border-radius: 15px;
+        gap: 20px;
+        background: rgb(214, 209, 209);
+        color: black;
+        @media (max-width:600px ){
+            gap: 10px;
+        }
+    }
+
+    &__link {
+        padding: 5px;
+        @media (max-width:600px ){
+            font-size: 15px;
+        }
+        @media (max-width:500px ){
+            font-size: 13px;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: rgb(214, 209, 209);
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.footer {
+    max-width: 900px;
+    width: 100%;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    @media (max-width:900px ){
+        max-width: 450px;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    @media (max-width:500px ){
+        max-width: 270px;
+    }
+}
+
+.letter {
+    width: 100%;
+}
+
+.letter__form {
+    background: rgba(123, 121, 121, 0.6);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    @media (max-width:500px ){
+        padding: 10px;
+    }
+
+    &_input {
+        background: rgb(214, 209, 209);
+        padding: 10px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        resize: none;
+    }
+}

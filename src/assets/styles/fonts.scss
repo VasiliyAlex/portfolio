@@ -1,0 +1,11 @@
+$Vollkorn:  ('Medium', 500),
+            ('SemiBold', 600),
+            ('Regular', 400);  
+              
+@each $name, $weight in $Vollkorn {
+    @font-face {
+        font-family: 'Vollkorn';
+        src: url('../fonts/Vollkorn-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}

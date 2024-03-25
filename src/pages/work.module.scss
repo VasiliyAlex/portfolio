@@ -1,0 +1,131 @@
+.img {
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    transition: all 0.3s;
+}
+
+.button {
+    width: 100px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    &:hover{
+        background: rgb(101, 100, 100);
+    }
+}
+
+.work {
+    background: var(--background);
+    color: var(--color);
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        
+        @media (max-width:800px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+    }
+
+    &__img {
+        border-radius: 30px;
+        overflow: hidden;
+        height: 250px;
+        opacity: 0.8;
+        @media (max-width:800px) {
+            height: 190px;
+        }
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 40px;
+        color: var(--color);
+        margin: 15px auto;
+
+        @media (max-width:800px) {
+            margin: 0 auto;
+        }
+    }
+
+    &__p {
+        display: flex;
+        font-weight: 200;
+        font-size: 20px;
+        color: var(--color);
+
+        @media (max-width:800px) {
+            margin: 0 auto;
+        }
+    }
+    &__right_box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @media (max-width:800px) {
+            flex-direction: row;
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    &__card {
+
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        border-radius: 30px;
+        background: rgba(123, 121, 121, 0.6);
+        transition: all 0.3s;
+        
+        &:hover { 
+             box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+            width: 100.5%;
+            height: 100.5%;
+            margin: -0.3% 0.3% 0.3% -0.3% ;
+         }
+         
+         &:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width:800px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (max-width:800px) {
+            max-width: 300px;
+            width: 100%;
+            gap: 10px;
+        }
+
+        &_left {
+            padding: 15px;
+            width: 100%;
+        }
+
+        &_right {
+            padding: 15px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media (max-width:800px) {
+                height: 170px;
+            }
+        }
+    }
+}
